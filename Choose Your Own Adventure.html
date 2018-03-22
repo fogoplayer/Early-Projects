@@ -1,0 +1,53 @@
+<html>
+<script>
+  //This is the setup stage
+  var start = prompt("Skip login? Yes or no.")
+  if (start === "no") {
+      var age = prompt("how old are you?")
+      if (age < 18) {
+          confirm("Have fun!")
+      } else {
+          ("Hope you don't get bored.")
+          }
+  };
+      confirm("Ready to play?")
+
+      //Now we start doing the actual story
+  
+      confirm("'All hail Lord Ackbert!' the sargeant cries. You feel the gentle bumps of the carriage as you ride down the city streets of Eckberton, your domain. Your citizens seem happy enough at the parade, but you know they must be worried; you are here because of a letter you recieved from your chamberlain, saying something is terribly wrong! You wonder if you would be better off just heading back to your vacation.")
+      var sit1 = prompt("Do you abandon your people, or do you continue to the castle to see what the problem is? Answer 'abandon' or 'continue'.")
+  
+      if (sit1 === "abandon") {
+          confirm("You abandon your people and finish your vacation. When you return, Eckberton is burnt down, your once magnificent castle now a charred husk. You head to London, fearing the King's wrath.")
+          confirm("YOU LOSE!")
+      } else {
+          confirm("You bravely decide to continue, despite your fears about what might happen. When you arrive at the castle, you immediately find the chamberlain and ask him to explain. He says that a dragon has been sighted in the area, and as Lord of the Land, it is my responsibility.")
+          var sit2 = prompt("Do you fight the dragonn yourself, or do you send one of your knights to deal with this? Answer 'me' or 'knight'")
+          if (sit2 === "knight") {
+              confirm("The knight you choose is hardly your best. He barely slays the dragon, dying in the attempt. The dragon is dead, but you have his death on your conscience.")
+              confirm("YOU LOSE!")
+          } else {
+              confirm("You bravely decide to face the dragon yourself. Now you just need a weapon - and you know the perfect one. Glanduril, the sword of your father, has slain dragons before - it would be perfect for what you have in mind.")
+              var sit3 = prompt("Do you sneak out, or leave with ceremony. Answer 'sneak' or 'ceremony'.")
+  
+              if (sit3 === "sneak") {
+                  confirm("You steal out of the castle in the dead of night, you sword under your arm. You breathe a sigh of relief as you reach the edge of the filliage, and then turn for the dragon's lair.")
+              } else {
+                  confirm("You were hoping for a feast, but the dragon has been destroying crops; there's not enough food. A public announcement will have to do. You summon everyone to the town square, state you purpose, and then mount your horse. The people cheer as you leave the town, heading for the dragon's nest.")
+              }
+              confirm("You hiked all day to reach the lair. When you get there, you hear voices.")
+              var sit4 = prompt("Do you barge in to rescue them from the dragon, or creep up on them to see what's goin on?  Answer 'rescue' or 'creep'")
+              if (sit4 === "rescue") {
+                  confirm("You dash into a cave you found. Inside, two men - wizards, as you can tell from their staffs and flowing black robes - see you and, without asking questions, zap you with a spell. You feel excruciating pain, and then everything is black.")
+                  confirm("YOU LOSE!")
+              } else {
+                  confirm("You peer into the cave. Inside, two men - wizards, as you can tell from their staffs and flowing black robes - are chatting loudly about how scared people were of the dragon illusion they conjured. You know they are the source of the trouble. You unsheathe your sword and charge in, slicing one in half before he can respond. The other tries to fire a spell at you, but you block it with your sword and get him as well. You lower your sword, panting. You have vanquished the evil, and a grin spreads across your face. It's time to head back to Eckberton. Maybe this time there'll be a feast...")
+                  confirm("YOU WON!")
+              }
+          }
+      }
+</script>
+<body>
+  <!--And HTML here-->
+</body>
+</html>

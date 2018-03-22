@@ -1,0 +1,69 @@
+<html>
+<script>
+  //What are you gaugeing? (Fav color, animal, etc.) NOTE: IS CURRENTLY SET UP F
+var sub = "color";
+
+//These set the starting value at 0
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+
+//Now it sets the options
+var o1 = "red";
+var o2 = "blue";
+var o3 = "yellow";
+var o4 = "green";
+
+var qf = function(question) {
+    var answer = prompt(question);
+
+    if (answer === "a") {
+        a++;
+    }
+
+    if (answer === "b") {
+        b++;
+    }
+
+    if (answer === "c") {
+        c++;
+    }
+
+    if (answer === "d") {
+        d++;
+    }
+};
+
+//First question
+qf("1. Which of these scenes would you prefer: \nA. A desert \nB. An oceanside beach \nC. A sunny day \nD. A meadow");
+
+//function compares values
+var comp = function(v1, v2) {
+    if (v1 > v2) {
+        return v1;
+    } else {
+        return v2;
+    }
+};
+
+if (comp(comp(comp(a, b), c), d) === a) {
+    confirm("Your favorite" + sub + "is " + o1);
+}
+
+if (comp(comp(comp(a, b), c), d) === b) {
+    confirm("Your favorite" + sub + "is " + o2);
+}
+
+if (comp(comp(comp(a, b), c), d) === c) {
+    confirm("Your favorite" + sub + "is " + o3);
+}
+
+if (comp(comp(comp(a, b), c), d) === d) {
+    confirm("Your favorite " + sub + "is " + o4);
+}
+</script>
+<body>
+  <!--And HTML here-->
+</body>
+</html>

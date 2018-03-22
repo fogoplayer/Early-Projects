@@ -1,0 +1,126 @@
+<html>
+<script>
+  //This makes it go until an "Executive Password" is used to intiate shutdown.
+while( 10 == 10) {
+    console.log("Greetings. You may call me J.A.R.V.I.S. Due to the limits of my programming, I am afraid all answers must be lowercase. (Otherwise I may have an error in processing your requests.)");
+confirm("Greetings. You may call me J.A.R.V.I.S. Due to the limits of my programming, I am afraid all answers must be lowercase. (Otherwise I may have an error in processing your requests.)");
+while (10==10){
+var pass = prompt("Do you have an executive passcode? If so, enter it here. If not, type 'no'");
+if (pass == "ironman1" || pass == "no" || pass == pass2){
+    break;
+}else{
+    console.log("Try again!");
+    confirm("Try again!");
+}
+}
+do {
+       //This is the greeting and setup
+do {
+console.log("Enter a command. If you need a list of commands, type 'command'.");
+var com = prompt("Enter a command. If you need a list of commands, type 'command'.");
+    if (com == "command") {
+        console.log("If you would like a drink, type 'drink'. If you would like to check your email, type 'email'. If you would like to access your Google Voice Inbox, type 'voice'. If you would like me to tun on a music playlist, type 'music'.");
+        confirm("If you would like a drink, type 'drink'. If you would like to check your email, type 'email'. If you would like to access your Google Voice Inbox, type 'voice'. To add to the list of executive passcodes, type 'passcode'");
+        console.log("Enter a command.");
+        var com = prompt("Enter a command.");
+        if (com == "drink" || com == "email" || com == "voice" || com == "passcode" || com === "") {
+            break;
+        }else{
+            console.log("I'm sorry, I didn't catch that. Please try again.");
+            prompt("I'm sorry, I didn't catch that. Please try again.");
+        }
+    }
+} while(com != "drink" && com != "email" && com != "voice" && com != "passcode" && com !== "");
+} while(com != "drink" && com != "email" && com != "voice" && com != "passcode" && com !== "");
+
+//This section is for the 'drink' command.
+if (com == "drink"){
+    console.log("Tea, coffee, or water?");
+var cup = prompt("Tea, coffee, or water?");
+console.log(cup);
+	//As explored in previous code experiments, when you give options, you will have to code for every possible answer. However, since water is the only real option, that is all we have to include.
+if (cup == "water") {
+	console.log("I can see that you are capable of getting it yourself. Will you need directions?");
+	var dir = prompt("I can see that you are capable of getting it yourself. Will you need directions? (If possible, please answer yes or no.)");
+	if (dir == "yes"){
+		console.log("Proceed to the kitchen. Cups can be found in the lower cupboard by the back door. Water can be obtained from the sink or the dispenser on the refrigerator, and ice, if needed, can also be obtained from the aforementioned dispenser.");
+		confirm("Proceed to the kitchen. Cups can be found in the lower cupboard by the back door. Water can be obtained from the sink or the dispenser on the refrigerator, and ice, if needed, can also be obtained from the aforementioned dispenser.");
+	}			
+}else{
+	console.log("I'm sorry, that beverage is not currently availible.");
+	confirm("I'm sorry, that beverage is not currently availible.");
+}
+//end of beverages
+
+}else{}
+
+//This section is for the 'email' command 
+if (com == "email") {
+    var gmail1 = "Gmail";
+    var gmail2 = gmail1.link("gmail.com");
+    var outlook1 = "Outlook";
+    var outlook2 = outlook1.link("outlook.com");
+    var yahoo1 = "Yahoo";
+    var yahoo2 = yahoo1.link("mail.yahoo.com");
+   confirm(gmail2+", "+outlook2+", "+yahoo2+". Sorry, I do not currently support other email types.");
+   console.log(gmail2+", "+outlook2+", "+yahoo2+". Sorry, I do not currently support other email types.");
+}
+
+//This section is for the 'voice' command
+if (com == "voice") {
+    var voice1 = "Google Voice";
+    var voice2 = voice1.link("voice.google.com");
+   confirm(voice2);
+   console.log(voice2);
+}
+
+//This section is for the 'Passcode' command
+if (pass == "ironman1" && com == "passcode"){
+    while (10 == 10){
+    console.log("Please reenter the executive passcode.");
+    var check = prompt("Please reenter the executive passcode.");
+    if (check == "ironman1"){
+    while ( 10==10 ){
+    console.log("Enter your new passcode here.");
+    var pass2 = prompt("Enter your new passcode here.");
+    console.log("Reenter passcode for confirmation");
+    var check2 = prompt("Reenter passcode for confirmation");
+    if (check2 == pass2){
+        console.log("Passcode saved");
+        confirm("Passcode saved");
+        break;
+    }else{
+        console.log("I'm sorry, your passwords did not match. Please try agin.");
+    }
+    }
+    }else{
+        console.log("That is not a valid passcode. Please try again.");}
+}
+
+//I am now going to try to make it loop back to a different point, so that the greeting is only displayed at the very beginning.
+console.log("Will there be anything else?");
+var rb = prompt("Will there be anything else?");
+if (rb == "no"){
+    break;
+}
+}
+//These will be the final few lines. All other code should proceed them.
+	console.log("Have an excellent day!");
+	confirm("Have an excellent day!");
+//Shutdown Sequence
+if (pass == "ironman1" || pass == pass2) {	
+	var stop = prompt("Initate shutdown?");
+if (stop == "yes") {
+    console.log("Saving source code...");
+    confirm("Saving source code...");
+    console.log("Shutting down...");
+    confirm("Shutting down...");
+	break;
+}
+    }else{}
+}
+</script>
+<body>
+  <!--And HTML here-->
+</body>
+</html>
